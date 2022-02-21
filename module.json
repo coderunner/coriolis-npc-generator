@@ -5,7 +5,7 @@
   "author": "Félix-Étienne Trépanier",
   "version": "1.0.0",
   "minimumCoreVersion": "0.8.9",
-  "compatibleCoreVersion": "0.9.0",
+  "compatibleCoreVersion": "9",
   "esmodules": ["./scripts/main.js"],
   "packs": [
     {
