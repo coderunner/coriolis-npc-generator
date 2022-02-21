@@ -1287,7 +1287,7 @@ function getRandomElement(items) {
 }
 
 export class CoriolisNPCGenerator {
-  static generateNPC() {
+  generateNPC() {
     let npc =
       '<b>' +
       getRandomElement(firstNames) +
@@ -1307,9 +1307,9 @@ export class CoriolisNPCGenerator {
     return npc;
   }
 
-  static run() {
+  run() {
     const chatData = {
-      content: generateNPC(),
+      content: this.generateNPC(),
       whisper: ChatMessage.getWhisperRecipients('GM'),
     };
     ChatMessage.create(chatData);
