@@ -21,6 +21,7 @@ export class CoriolisNPCGenerator {
   run() {
     const npc = this.generateNPC();
     const labels = {
+      nameLabel: 'Name',
       professionLabel: 'Profession',
       characteristicLabel: 'Characteristic',
       activityLabel: 'Activity',
