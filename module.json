@@ -15,6 +15,4 @@
       "entity": "Macro"
     }
   ],
-  "manifest": "https://raw.githubusercontent.com/coderunner/coriolis-npc-generator/main/module.json",
-  "download": "https://github.com/coderunner/coriolis-npc-generator/archive/refs/tags/0.0.2.zip"
 }
