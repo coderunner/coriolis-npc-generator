@@ -1,12 +1,16 @@
-.name {
+.coriolis-npc .name {
   font-weight: bold;
 }
-.profession {
+.coriolis-npc .profession {
   font-weight: bold;
 }
-.characteristic {
+.coriolis-npc .characteristic {
   font-weight: bold;
 }
-.activity {
+.coriolis-npc .activity {
+  font-weight: bold;
+}
+
+.coriolis-npc .motivation {
   font-weight: bold;
 }
