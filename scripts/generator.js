@@ -2,6 +2,7 @@ import { FIRST_NAMES, LAST_NAMES } from './data/names.js';
 import { PROFESSIONS } from './data/professions.js';
 import { CHARACTERISTICS } from './data/characteristics.js';
 import { ACTIVITIES } from './data/activities.js';
+import { MOTIVATIONS } from './data/motivations.js';
 
 import { getRandomElement } from './utils.js';
 
@@ -13,6 +14,7 @@ export class CoriolisNPCGenerator {
       profession: getRandomElement(PROFESSIONS),
       characteristic: getRandomElement(CHARACTERISTICS),
       activity: getRandomElement(ACTIVITIES),
+      motivation: getRandomElement(MOTIVATIONS),
     };
   }
 
