@@ -1,27 +1,37 @@
 <div class="coriolis-npc">
+  {{#if settings.generateName}}
   <p><span>{{localize 'coriolisNpcGenerator.labels.name'}}: </span><span
       class='name'
-    >{{firstName}}
-      {{lastName}}</span></p>
+    >{{npc.firstName}}
+      {{npc.lastName}}</span></p>
+  {{/if}}
+  {{#if settings.generateProfession}}
   <p><span>{{localize 'coriolisNpcGenerator.labels.profession'}}: </span><span
       class='profession'
     >{{localize
-        (concat 'coriolisNpcGenerator.professions.' profession.name)
+        (concat 'coriolisNpcGenerator.professions.' npc.profession.name)
       }}</span></p>
+  {{/if}}
+  {{#if settings.generateCharacteristic}}
   <p><span>{{localize 'coriolisNpcGenerator.labels.characteristic'}}:
     </span><span class='characteristic'>{{localize
-        (concat 'coriolisNpcGenerator.characteristics.' characteristic)
+        (concat 'coriolisNpcGenerator.characteristics.' npc.characteristic)
       }}</span></p>
+  {{/if}}
+  {{#if settings.generateActivity}}
   <p><span>{{localize 'coriolisNpcGenerator.labels.activity'}}: </span><span
       class='activity'
     >{{localize
-        (concat 'coriolisNpcGenerator.activities.' activity)
+        (concat 'coriolisNpcGenerator.activities.' npc.activity)
       }}</span></p>
+  {{/if}}
+  {{#if settings.generateMotivation}}
   <p>
       <p><span>{{localize 'coriolisNpcGenerator.labels.motivation'}}: </span><span
       class='motivation'
     >{{localize
-        (concat 'coriolisNpcGenerator.motivations.' motivation)
+        (concat 'coriolisNpcGenerator.motivations.' npc.motivation)
       }}</span></p>
   <p>
+  {{/if}}
 </div>

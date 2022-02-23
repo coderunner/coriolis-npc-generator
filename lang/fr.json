@@ -1,5 +1,17 @@
 {
   "coriolisNpcGenerator": {
+    "settings": {
+      "generateName": "Générer un Nom",
+      "generateNameHint": "Si activé, un nom sera généré pour le PNJ.",
+      "generateProfession": "Générer une Profession",
+      "generateProfessionHint": "Si activé, une profession sera générée pour le PNJ.",
+      "generateCharacteristic": "Générer une Caractéristique",
+      "generateCharacteristicHint": "Si activé, une caractéristique sera générée pour le PNJ.",
+      "generateActivity": "Générer une Activité",
+      "generateActivityHint": "Si activé, une activité sera générée pour le PNJ.",
+      "generateMotivation": "Générer une Motivation",
+      "generateMotivationHint": "Si activé, une motivation sera générée pour le PNJ."
+    },
     "labels": {
       "name": "Nom",
       "profession": "Profession",
