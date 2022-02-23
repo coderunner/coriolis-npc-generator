@@ -1,5 +1,17 @@
 {
   "coriolisNpcGenerator": {
+    "settings": {
+      "generateName": "Generate Name",
+      "generateNameHint": "If enabled, a name will be generated for the NPC.",
+      "generateProfession": "Generate Profession",
+      "generateProfessionHint": "If enabled, a profession will be generated for the NPC.",
+      "generateCharacteristic": "Generate Characteristic",
+      "generateCharacteristicHint": "If enabled, a characteristic will be generated for the NPC.",
+      "generateActivity": "Generate Activity",
+      "generateActivityHint": "If enabled, an activity will be generated for the NPC.",
+      "generateMotivation": "Generate Motivation",
+      "generateMotivationHint": "If enabled, a motivation will be generated for the NPC."
+    },
     "labels": {
       "name": "Name",
       "profession": "Profession",

@@ -5,6 +5,7 @@ import { ACTIVITIES } from './data/activities.js';
 import { MOTIVATIONS } from './data/motivations.js';
 
 import { getRandomElement } from './utils.js';
+import { getSettings } from './settings.js';
 
 export class CoriolisNPCGenerator {
   generateNPC() {
@@ -20,9 +21,10 @@ export class CoriolisNPCGenerator {
 
   run() {
     const npc = this.generateNPC();
+    const settings = getSettings();
     const content = renderTemplate(
       'modules/coriolis-npc-generator/templates/npc.hbs',
-      npc
+      { npc: npc, settings: settings }
     );
 
     content.then((d) => {
