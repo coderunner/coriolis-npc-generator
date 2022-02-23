@@ -1,0 +1,8 @@
+{
+  "coriolisNpcGenerator": {
+    "nameLabel": "Nom",
+    "professionLabel": "Profession",
+    "characteristicLabel": "Caractéristique",
+    "activityLabel": "Activité"
+  }
+}

@@ -3,11 +3,23 @@
   "title": "Coriolis NPC Generator",
   "description": "A simple macro that generates NPCs names and profession.",
   "author": "Félix-Étienne Trépanier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minimumCoreVersion": "0.8.9",
   "compatibleCoreVersion": "9",
   "esmodules": ["./scripts/main.js"],
   "styles": ["./styles/npc.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
+    }
+  ],
   "packs": [
     {
       "name": "coriolis-npc-generator-macro",

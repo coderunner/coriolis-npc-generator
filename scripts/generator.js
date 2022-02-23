@@ -20,18 +20,9 @@ export class CoriolisNPCGenerator {
 
   run() {
     const npc = this.generateNPC();
-    const labels = {
-      nameLabel: 'Name',
-      professionLabel: 'Profession',
-      characteristicLabel: 'Characteristic',
-      activityLabel: 'Activity',
-    };
     const content = renderTemplate(
       'modules/coriolis-npc-generator/templates/npc.hbs',
-      {
-        ...labels,
-        ...npc,
-      }
+      npc
     );
 
     content.then((d) => {

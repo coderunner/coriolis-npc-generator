@@ -1153,6 +1153,7 @@ export const LAST_NAMES = [
   'Wasem',
   'Zogby',
 ];
+
 export const PROFESSIONS = [
   'Guard',
   'Baker',
