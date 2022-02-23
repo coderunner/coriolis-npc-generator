@@ -28,7 +28,7 @@ You can configure the amount of information you want for generated NPCs in the M
 
 ## Languages
 
-This module support both English and French languages.
+This module supports both English and French languages.
 
 ![french](https://i.imgur.com/EuH3LeC.png)
 
