@@ -1,15 +1,21 @@
 <div>
-  <p><span>{{localize 'coriolisNpcGenerator.nameLabel'}}: </span><span
+  <p><span>{{localize 'coriolisNpcGenerator.labels.name'}}: </span><span
       class='name'
     >{{firstName}}
       {{lastName}}</span></p>
-  <p><span>{{localize 'coriolisNpcGenerator.professionLabel'}}: </span><span
+  <p><span>{{localize 'coriolisNpcGenerator.labels.profession'}}: </span><span
       class='profession'
-    >{{profession}}</span></p>
-  <p><span>{{localize 'coriolisNpcGenerator.characteristicLabel'}}: </span><span
-      class='characteristic'
-    >{{characteristic}}</span></p>
-  <p><span>{{localize 'coriolisNpcGenerator.activityLabel'}}: </span><span
+    >{{localize
+        (concat 'coriolisNpcGenerator.professions.' profession.name)
+      }}</span></p>
+  <p><span>{{localize 'coriolisNpcGenerator.labels.characteristic'}}:
+    </span><span class='characteristic'>{{localize
+        (concat 'coriolisNpcGenerator.characteristics.' characteristic)
+      }}</span></p>
+  <p><span>{{localize 'coriolisNpcGenerator.labels.activity'}}: </span><span
       class='activity'
-    >{{activity}}</span></p>
+    >{{localize
+        (concat 'coriolisNpcGenerator.activities.' activity)
+      }}</span></p>
+  <p>
 </div>
