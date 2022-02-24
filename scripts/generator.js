@@ -2,20 +2,20 @@ import { FIRST_NAMES, LAST_NAMES } from './data/names.js';
 import { PROFESSIONS } from './data/professions.js';
 import { CHARACTERISTICS } from './data/characteristics.js';
 import { ACTIVITIES } from './data/activities.js';
-import { MOTIVATIONS } from './data/motivations.js';
 
 import { getRandomElement } from './utils.js';
 import { getSettings } from './settings.js';
 
 export class CoriolisNPCGenerator {
   generateNPC() {
+    const activity = getRandomElement(ACTIVITIES);
     return {
       firstName: getRandomElement(FIRST_NAMES),
       lastName: getRandomElement(LAST_NAMES),
       profession: getRandomElement(PROFESSIONS),
       characteristic: getRandomElement(CHARACTERISTICS),
-      activity: getRandomElement(ACTIVITIES),
-      motivation: getRandomElement(MOTIVATIONS),
+      activity: activity.name,
+      motivation: getRandomElement(activity.motivations),
     };
   }
 

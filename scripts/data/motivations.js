@@ -1,44 +1,38 @@
-export const MOTIVATIONS = [
-  'achievement',
-  'adventure',
-  'artifact',
-  'birr',
-  'change',
-  'children',
-  'contract',
-  'debt',
-  'duty',
-  'entertain',
-  'fame',
-  'family',
-  'food',
-  'findingSomeone',
-  'findingSomething',
-  'freedom',
-  'helpOthers',
-  'job',
-  'justice',
-  'knowledge',
-  'law',
-  'livingTrue',
-  'love',
-  'loyalty',
-  'lust',
-  'makeAdifference',
-  'obedience',
-  'personalGain',
-  'power',
-  'pride',
-  'reputation',
-  'retirement',
-  'returnHome',
-  'salvation',
-  'secret',
-  'seeTheHorizon',
-  'status',
-  'survival',
-  'thrills',
-  'vacation',
-  'vengeance',
-  'wealth',
-];
+export const ACHIEVMENT = 'achievement';
+export const ADVENTURE = 'adventure';
+export const ARTIFACT = 'artifact';
+export const BIRR = 'birr';
+export const CHANGE = 'change';
+export const CHILDREN = 'children';
+export const CONTRACT = 'contract';
+export const DEBT = 'debt';
+export const DUTY = 'duty';
+export const ENTERTAIN = 'entertain';
+export const FAME = 'fame';
+export const FAMILY = 'family';
+export const FOOD = 'food';
+export const FINDING_SOMEONE = 'findingSomeone';
+export const FINDING_SOMETHING = 'findingSomething';
+export const FREEDOM = 'freedom';
+export const HELP_OTHERS = 'helpOthers';
+export const JOB = 'job';
+export const JUSTICE = 'justice';
+export const KNOWLEDGE = 'knowledge';
+export const LAW = 'law';
+export const LIVING_TRUE = 'livingTrue';
+export const LOVE = 'love';
+export const LOYALTY = 'loyalty';
+export const LUST = 'lust';
+export const MAKE_DIFFERENCE = 'makeAdifference';
+export const PERSONAL_GAIN = 'personalGain';
+export const POWER = 'power';
+export const PRIDE = 'pride';
+export const REPUTATION = 'reputation';
+export const RETURN_HOME = 'returnHome';
+export const SALVATION = 'salvation';
+export const SECRET = 'secret';
+export const SEE_HORIZON = 'seeTheHorizon';
+export const SURVIVAL = 'survival';
+export const THRILLS = 'thrills';
+export const VENGEANCE = 'vengeance';
+export const WEALTH = 'wealth';
