@@ -18,6 +18,11 @@
       "lang": "fr",
       "name": "French",
       "path": "lang/fr.json"
+    },
+    {
+      "lang": "sv",
+      "name": "Swedish",
+      "path": "lang/sv.json"
     }
   ],
   "packs": [
