@@ -7,9 +7,9 @@
       "name": "Félix-Étienne Trépanier"
     }
   ],
-  "version": "1.5.2",
+  "version": "2.0.0",
   "compatibility": {
-    "minimum": "0.8.9",
+    "minimum": "10",
     "verified": "10"
   },
   "esmodules": ["./scripts/main.js"],
@@ -43,5 +43,5 @@
     }
   ],
   "manifest": "https://raw.githubusercontent.com/coderunner/coriolis-npc-generator/main/module.json",
-  "download": "https://github.com/coderunner/coriolis-npc-generator/archive/refs/tags/1.5.2.zip"
+  "download": "https://github.com/coderunner/coriolis-npc-generator/archive/refs/tags/2.0.0.zip"
 }
