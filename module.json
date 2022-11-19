@@ -39,9 +39,9 @@
       "name": "coriolis-npc-generator-macro",
       "label": "Coriolis NPC Generator Macro",
       "path": "./packs/generator.db",
-      "entity": "Macro"
+      "type": "Macro"
     }
   ],
   "manifest": "https://raw.githubusercontent.com/coderunner/coriolis-npc-generator/main/module.json",
-  "download": "https://github.com/coderunner/coriolis-npc-generator/archive/refs/tags/1.5.0.zip"
+  "download": "https://github.com/coderunner/coriolis-npc-generator/archive/refs/tags/1.5.1.zip"
 }
