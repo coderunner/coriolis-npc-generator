@@ -1,23 +1,31 @@
 {
-  "name": "coriolis-npc-generator",
+  "id": "coriolis-npc-generator",
   "title": "Coriolis NPC Generator",
   "description": "A simple macro that generates NPCs names and profession.",
-  "author": "Félix-Étienne Trépanier",
-  "version": "1.4.0",
-  "minimumCoreVersion": "0.8.9",
-  "compatibleCoreVersion": "9",
+  "authors": [
+    {
+      "name": "Félix-Étienne Trépanier"
+    }
+  ],
+  "version": "1.5.0",
+  "compatibility": {
+    "minimum": "0.8.9",
+    "verified": "10"
+  },
   "esmodules": ["./scripts/main.js"],
   "styles": ["./styles/npc.css"],
   "languages": [
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json"
+      "path": "lang/en.json",
+      "flags": {}
     },
     {
       "lang": "fr",
       "name": "French",
-      "path": "lang/fr.json"
+      "path": "lang/fr.json",
+      "flags": {}
     }
   ],
   "packs": [
@@ -29,5 +37,5 @@
     }
   ],
   "manifest": "https://raw.githubusercontent.com/coderunner/coriolis-npc-generator/main/module.json",
-  "download": "https://github.com/coderunner/coriolis-npc-generator/archive/refs/tags/1.4.0.zip"
+  "download": "https://github.com/coderunner/coriolis-npc-generator/archive/refs/tags/1.5.0.zip"
 }
