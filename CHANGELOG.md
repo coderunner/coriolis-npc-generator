@@ -1,6 +1,18 @@
 # Changelog
 
-### [2.1.0]([https://www.github.com/winks-vtt/yze-coriolis/compare/v3.0.11...v3.0.12](https://github.com/coderunner/coriolis-npc-generator/compare/2.0.0...2.1.0)) (2023-03-31)
+### [2.1.3](https://github.com/coderunner/coriolis-npc-generator/compare/2.1.2...2.1.3) (2023-03-31)
+
+### Bug fixes
+
+* Fix other faction bug when generating faction.
+
+### [2.1.2](https://github.com/coderunner/coriolis-npc-generator/compare/2.1.0...2.1.2) (2023-03-31)
+
+### Bug fixes
+
+* Fix typo in settings.
+
+### [2.1.0](https://github.com/coderunner/coriolis-npc-generator/compare/2.0.0...2.1.0) (2023-03-31)
 
 
 ### Features
