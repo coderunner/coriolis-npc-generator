@@ -20,12 +20,13 @@ export const ZENITHIAN_FACTIONS = [
 export const OTHER_FACTIONS = ['nazareemSacrifice'];
 
 export function getFaction(origin, settings) {
-  if (Math.random() < settings.noFactionPercentage / 100) {
+  const randomValue = Math.random();
+  if (randomValue < settings.noFactionPercentage / 100) {
     return null;
   }
 
   if (
-    Math.random() <
+    randomValue <
     (settings.noFactionPercentage + settings.otherFactionPercentage) / 100
   ) {
     return getRandomElement(OTHER_FACTIONS);
