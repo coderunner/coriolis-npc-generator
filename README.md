@@ -2,7 +2,13 @@
 
 Coriolis NPC Generator is a simple Foundry VTT module that post to the chat (whispered to the GM only) an NPC with a name, a profession, a characteristic, an activity, and a motivation.
 
-![npc](https://i.imgur.com/YzTxgT8.png)
+![npc](https://i.imgur.com/y9la682.png)
+
+If you like the NPC, you can create the NPC Sheet by clicking the button.
+
+![npc](https://i.imgur.com/lvjylwo.png)
+
+![npc](https://i.imgur.com/e1Novsp.png)
 
 This module was inspired by https://rwinslow.github.io/#coriolis-npcs.
 
@@ -24,7 +30,7 @@ During the game, when you quickly need an NPC, click the macro to generate an NP
 
 You can configure the amount of information you want for generated NPCs in the Module Settings.
 
-![settings](https://i.imgur.com/bkjX2Js.png)
+![settings](https://i.imgur.com/qPijOiA.png)
 
 ## Languages
 
