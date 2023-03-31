@@ -1,6 +1,9 @@
 .coriolis-npc .name {
   font-weight: bold;
 }
+.coriolis-npc .icon {
+  font-weight: bold;
+}
 .coriolis-npc .profession {
   font-weight: bold;
 }
@@ -10,7 +13,25 @@
 .coriolis-npc .activity {
   font-weight: bold;
 }
-
 .coriolis-npc .motivation {
   font-weight: bold;
+}
+.coriolis-npc .faction {
+  font-weight: bold;
+}
+
+.coriolis-npc div.create-sheet {
+  position: relative;
+  margin: 0;
+  line-height: 24px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border-light-2);
+  border-radius: 3px;
+  box-shadow: 0 0 2px #fff inset;
+  word-break: break-all;
+  margin-bottom: 5px;
+  flex: 0 0 22px;
+  font-size: 12px;
+  color: #7a7971;
 }

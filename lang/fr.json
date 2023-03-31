@@ -10,14 +10,51 @@
       "generateActivity": "Générer une Activité",
       "generateActivityHint": "Si activé, une activité sera générée pour le PNJ.",
       "generateMotivation": "Générer une Motivation",
-      "generateMotivationHint": "Si activé, une motivation sera générée pour le PNJ."
+      "generateMotivationHint": "Si activé, une motivation sera générée pour le PNJ.",
+      "generateFaction": "Générer une Faction",
+      "generateFactionHint": "Si activé, une faction pourrait être associée au PNJ.",
+      "generateIcon": "Générer un Icône",
+      "generateIconHint": "Si activé, une icône sera associée pour le PNJ.",
+      "noFactionPercentage": "Pourcentage des PNJs qui ne sont pas membre d'une faction.",
+      "otherFactionPercentage": "Pourcentage des PNJs qui sont membres d'une faction mineure."
     },
     "labels": {
       "name": "Nom",
       "profession": "Profession",
       "characteristic": "Caractéristique",
       "activity": "Activité",
-      "motivation": "Motivation"
+      "motivation": "Motivation",
+      "faction": "Faction",
+      "icon": "Icône",
+      "createNpcSheet": "Créer la fiche du PNJ"
+    },
+    "origins": {
+      "firstcome": "Premiers",
+      "zenithian": "Zénétiens"
+    },
+    "factions": {
+      "ahlamsTemple": "Temple d'Ahlam",
+      "draconites": "Les Draconites",
+      "churchOfTheIcons": "L'Église des Icônes",
+      "orderOfThePariah": "L'Ordre des Parias",
+      "nomadFeferation": "La Fédération Nomade",
+      "consortium": "Le Consortium",
+      "freeLeague": "La Ligue Franche",
+      "legion": "La Légion",
+      "syndicate": "Le Syndicat",
+      "zenithianHegemony": "L'Hégémonie zénithienne",
+      "nazareemSacrifice": "Sacrifice de Nazareem"
+    },
+    "icons": {
+      "theLadyOfTears": "La Dame des Larmes",
+      "theDancer": "Le Danseur",
+      "theGambler": "Le Joueur",
+      "theMerchant": "Le Négociant",
+      "theDeckhand": "Le Matelot",
+      "theTraveler": "Le Voyageur",
+      "theMessenger": "Le Messager",
+      "theJudge": "Le Juge",
+      "theFaceless": "Le Sans-Visage"
     },
     "professions": {
       "academic": "Professeur.e",
