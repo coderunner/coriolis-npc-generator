@@ -30,7 +30,7 @@ During the game, when you quickly need an NPC, click the macro to generate an NP
 
 You can configure the amount of information you want for generated NPCs in the Module Settings.
 
-![settings](https://i.imgur.com/qPijOiA.png)
+![settings](https://i.imgur.com/2xwrjp7.png)
 
 ## Languages
 
