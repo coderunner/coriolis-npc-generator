@@ -16,7 +16,7 @@
       "generateIcon": "Generate Icon",
       "generateIconHint": "If enabled, an Icon will be assigned to the NPC.",
       "noFactionPercentage": "Percentage of NPCs that are not a member of any faction.",
-      "otherFactionPercentage": "Percentage of NPCs that members of a minor faction."
+      "otherFactionPercentage": "Percentage of NPCs that are members of a minor faction."
     },
     "labels": {
       "name": "Name",
