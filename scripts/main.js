@@ -5,8 +5,12 @@ import {
   CHARACTERISTIC_SETTING,
   ACTIVITY_SETTING,
   MOTIVATION_SETTING,
+  FACTION_SETTING,
+  ICON_SETTING,
+  NO_FACTION_PERCENTAGE,
+  OTHER_FACTION_PERCENTAGE,
 } from './settings.js';
-import { MODULE_NAME } from './module-name.js';
+import { MODULE_NAME } from './constants.js';
 
 Hooks.once('ready', async () => {
   game.CoriolisNpcGenerator = new CoriolisNPCGenerator();
@@ -51,6 +55,64 @@ Hooks.once('ready', async () => {
     default: true,
     config: true,
   });
+  game.settings.register(MODULE_NAME, FACTION_SETTING, {
+    name: 'coriolisNpcGenerator.settings.generateFaction',
+    hint: 'coriolisNpcGenerator.settings.generateFactionHint',
+    scope: 'client',
+    type: Boolean,
+    default: true,
+    config: true,
+  });
+  game.settings.register(MODULE_NAME, ICON_SETTING, {
+    name: 'coriolisNpcGenerator.settings.generateIcon',
+    hint: 'coriolisNpcGenerator.settings.generateIconHint',
+    scope: 'client',
+    type: Boolean,
+    default: true,
+    config: true,
+  });
+  game.settings.register(MODULE_NAME, ICON_SETTING, {
+    name: 'coriolisNpcGenerator.settings.generateIcon',
+    hint: 'coriolisNpcGenerator.settings.generateIconHint',
+    scope: 'client',
+    type: Boolean,
+    default: true,
+    config: true,
+  });
+  game.settings.register(MODULE_NAME, NO_FACTION_PERCENTAGE, {
+    name: 'coriolisNpcGenerator.settings.noFactionPercentage',
+    scope: 'client',
+    type: Number,
+    default: 20,
+    range: {
+      min: 0,
+      max: 100,
+      step: 1,
+    },
+    config: true,
+  });
+  game.settings.register(MODULE_NAME, OTHER_FACTION_PERCENTAGE, {
+    name: 'coriolisNpcGenerator.settings.otherFactionPercentage',
+    scope: 'client',
+    type: Number,
+    default: 2,
+    range: {
+      min: 0,
+      max: 100,
+      step: 1,
+    },
+    config: true,
+  });
 
   console.log('Coriolis NPC Generator | Ready');
+});
+
+Hooks.on('renderChatLog', (log, html, data) => {
+  html.on('click', '.create-sheet', async (ev) => {
+    const button = $(ev.currentTarget);
+    const messageId = button.parents('.message').attr('data-message-id');
+    const message = game.messages.get(messageId);
+
+    await game.CoriolisNpcGenerator.generateNPCSheet(message);
+  });
 });

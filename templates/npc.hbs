@@ -5,12 +5,28 @@
     >{{npc.firstName}}
       {{npc.lastName}}</span></p>
   {{/if}}
+  {{#if settings.generateIcon}}
+  <p><span>{{localize 'coriolisNpcGenerator.labels.icon'}}: </span><span
+      class='icon'
+    >{{localize
+        (concat 'coriolisNpcGenerator.icons.' npc.icon)
+      }}</span></p>
+  {{/if}}
   {{#if settings.generateProfession}}
   <p><span>{{localize 'coriolisNpcGenerator.labels.profession'}}: </span><span
       class='profession'
     >{{localize
         (concat 'coriolisNpcGenerator.professions.' npc.profession.name)
       }}</span></p>
+  {{/if}}
+  {{#if settings.generateFaction}}
+  {{#if npc.faction}}
+  <p><span>{{localize 'coriolisNpcGenerator.labels.faction'}}: </span><span
+      class='faction'
+    >{{localize
+        (concat 'coriolisNpcGenerator.factions.' npc.faction)
+      }}</span></p>
+  {{/if}}
   {{/if}}
   {{#if settings.generateCharacteristic}}
   <p><span>{{localize 'coriolisNpcGenerator.labels.characteristic'}}:
@@ -33,5 +49,17 @@
         (concat 'coriolisNpcGenerator.motivations.' npc.motivation)
       }}</span>
   <p>
+  {{/if}}
+  {{#if actorId}}
+  <a class="content-link" draggable="true" data-uuid="Actor.{{actorId}}" data-id={{actorId}} data-type="Actor" data-tooltip="Actor">
+    <i class="fas fa-user"></i>
+    {{npc.firstName}} {{npc.lastName}}
+  </a>
+  {{else}}
+  <div class="create-sheet">
+      <a>
+          <span>{{localize 'coriolisNpcGenerator.labels.createNpcSheet'}}</span>
+      </a>
+  </div>
   {{/if}}
 </div>

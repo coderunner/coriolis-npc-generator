@@ -10,14 +10,51 @@
       "generateActivity": "Generate Activity",
       "generateActivityHint": "If enabled, an activity will be generated for the NPC.",
       "generateMotivation": "Generate Motivation",
-      "generateMotivationHint": "If enabled, a motivation will be generated for the NPC."
+      "generateMotivationHint": "If enabled, a motivation will be generated for the NPC.",
+      "generateFaction": "Generate Faction",
+      "generateFactionHint": "If enabled, a faction might be assigned to the NPC.",
+      "generateIcon": "Generate Icon",
+      "generateIconHint": "If enabled, an Icon will be assigned to the NPC.",
+      "noFactionPercentage": "Percentage of NPCs that are not a member of any faction.",
+      "otherFactionPercentage": "Percentage of NPCs that members of a minor faction."
     },
     "labels": {
       "name": "Name",
       "profession": "Profession",
       "characteristic": "Characteristic",
       "activity": "Activity",
-      "motivation": "Motivation"
+      "motivation": "Motivation",
+      "faction": "Faction",
+      "icon": "Icon",
+      "createNpcSheet": "Create NPC Sheet"
+    },
+    "origins": {
+      "firstcome": "Firstcome",
+      "zenithian": "Zenithian"
+    },
+    "factions": {
+      "ahlamsTemple": "Ahlam's Temple",
+      "draconites": "The Draconites",
+      "churchOfTheIcons": "The Church of the Icons",
+      "orderOfThePariah": "The Order of the Pariah",
+      "nomadFeferation": "The Nomad Federation",
+      "consortium": "The Consortium",
+      "freeLeague": "The Free League",
+      "legion": "The Legion",
+      "syndicate": "The Syndicate",
+      "zenithianHegemony": "The Zenithian Hegemony",
+      "nazareemSacrifice": "Nazareem Sacrifice"
+    },
+    "icons": {
+      "theLadyOfTears": "The Lady of Tears",
+      "theDancer": "The Dancer",
+      "theGambler": "The Gambler",
+      "theMerchant": "The Merchant",
+      "theDeckhand": "The Deckhand",
+      "theTraveler": "The Traveler",
+      "theMessenger": "The Messenger",
+      "theJudge": "The Judge",
+      "theFaceless": "The Faceless"
     },
     "professions": {
       "academic": "Academic",
