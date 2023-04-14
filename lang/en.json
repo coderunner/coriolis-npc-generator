@@ -1,25 +1,36 @@
 {
   "coriolisNpcGenerator": {
     "settings": {
-      "generateName": "Generate Name",
-      "generateNameHint": "If enabled, a name will be generated for the NPC.",
-      "generateProfession": "Generate Profession",
-      "generateProfessionHint": "If enabled, a profession will be generated for the NPC.",
-      "generateCharacteristic": "Generate Characteristic",
-      "generateCharacteristicHint": "If enabled, a characteristic will be generated for the NPC.",
-      "generateActivity": "Generate Activity",
-      "generateActivityHint": "If enabled, an activity will be generated for the NPC.",
-      "generateMotivation": "Generate Motivation",
-      "generateMotivationHint": "If enabled, a motivation will be generated for the NPC.",
-      "generateFaction": "Generate Faction",
-      "generateFactionHint": "If enabled, a faction might be assigned to the NPC.",
-      "generateIcon": "Generate Icon",
-      "generateIconHint": "If enabled, an Icon will be assigned to the NPC.",
-      "noFactionPercentage": "Percentage of NPCs that are not a member of any faction.",
-      "otherFactionPercentage": "Percentage of NPCs that are members of a minor faction."
+      "generateName": "Display Name",
+      "generateNameHint": "If enabled, the NPC's name will be displayed in the chat.",
+      "generateProfession": "Display Profession",
+      "generateProfessionHint": "If enabled, the NPC's profession will be displayed in the chat.",
+      "generateCharacteristic": "Display Characteristic",
+      "generateCharacteristicHint": "If enabled, the NPC's  characteristic will be displayed in the chat.",
+      "generateActivity": "Display Activity",
+      "generateActivityHint": "If enabled, the NPC's activity will be displayed in the chat.",
+      "generateMotivation": "Display Motivation",
+      "generateMotivationHint": "If enabled, the NPC's motivation will be displayed in the chat.",
+      "generateFaction": "Display Faction",
+      "generateFactionHint": "If enabled, the NPC's faction (if any) will be displayed in the chat.",
+      "generateIcon": "Display Icon",
+      "generateIconHint": "If enabled, the NPC's Icon will be displayed in the chat.",
+      "noFactionPercentage": "No faction (%)",
+      "noFactionPercentageHint": "Percentage of generated NPCs that are not a member of any faction.",
+      "otherFactionPercentage": "Minor faction (%)",
+      "otherFactionPercentageHint": "Percentage of generared NPCs that are members of a minor faction.",
+      "humanitePercentage": "Humanites (%)",
+      "humanitePercentageHint": "Percentage of generated NPCs that are humanites.",
+      "semiIntelligencePercentage": "Semi-intelligence (%)",
+      "semiIntelligencePercentageHint": "Percentage of generated NPCs that are a semi-intelligence.",
+      "useAIPortrait": "Use AI portraits",
+      "useAIPortraitHint": "Requires 'Coriolis AI art pack by kbender' module.",
+      "useAIPortraitRoundToken": "Use AI tokens",
+      "useAIPortraitRoundTokenHint": "Use a round token matching the portrait. If unchecked, the portrait image will be used as the actor's token. Requires 'Coriolis AI art pack by kbender' module."
     },
     "labels": {
       "name": "Name",
+      "origin": "Origin",
       "profession": "Profession",
       "characteristic": "Characteristic",
       "activity": "Activity",
@@ -28,9 +39,32 @@
       "icon": "Icon",
       "createNpcSheet": "Create NPC Sheet"
     },
+    "semiIntelligence": {
+      "ekilibri": "Ekilibri",
+      "nekatra": "Nekatra",
+      "skavara": "Skavara",
+      "desdemodu": "Desdemodu"
+    },
+    "humanites": {
+      "tugul": "Tugul",
+      "ichtar": "Ichtar",
+      "krahin": "Krahin",
+      "tehl": "Tehl",
+      "jaron": "Jaron",
+      "mendril": "Mendril",
+      "vesti": "Vesti",
+      "kalit": "Kalit",
+      "sirb": "Sirb",
+      "xinghur": "Xinghur",
+      "nerid": "Nerid",
+      "saran": "Saran",
+      "anoa": "Anoa"
+    },
     "origins": {
       "firstcome": "Firstcome",
-      "zenithian": "Zenithian"
+      "zenithian": "Zenithian",
+      "semiIntelligence": "Semi-Intelligence",
+      "humanite": "Humanite"
     },
     "factions": {
       "ahlamsTemple": "Ahlam's Temple",

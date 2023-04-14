@@ -1,25 +1,36 @@
 {
   "coriolisNpcGenerator": {
     "settings": {
-      "generateName": "Générer un Nom",
-      "generateNameHint": "Si activé, un nom sera généré pour le PNJ.",
-      "generateProfession": "Générer une Profession",
-      "generateProfessionHint": "Si activé, une profession sera générée pour le PNJ.",
-      "generateCharacteristic": "Générer une Caractéristique",
-      "generateCharacteristicHint": "Si activé, une caractéristique sera générée pour le PNJ.",
-      "generateActivity": "Générer une Activité",
-      "generateActivityHint": "Si activé, une activité sera générée pour le PNJ.",
-      "generateMotivation": "Générer une Motivation",
-      "generateMotivationHint": "Si activé, une motivation sera générée pour le PNJ.",
-      "generateFaction": "Générer une Faction",
-      "generateFactionHint": "Si activé, une faction pourrait être associée au PNJ.",
-      "generateIcon": "Générer un Icône",
-      "generateIconHint": "Si activé, une icône sera associée pour le PNJ.",
-      "noFactionPercentage": "Pourcentage des PNJs qui ne sont pas membre d'une faction.",
-      "otherFactionPercentage": "Pourcentage des PNJs qui sont membres d'une faction mineure."
+      "generateName": "Afficher le nom",
+      "generateNameHint": "Si activé, le nom du PNJ sera affiché.",
+      "generateProfession": "Afficher la profession",
+      "generateProfessionHint": "Si activé, la profession du NPC sera affichée.",
+      "generateCharacteristic": "Afficher la caractéristique",
+      "generateCharacteristicHint": "Si activé, la caractéristique du PNJ sera affichée.",
+      "generateActivity": "Afficher l'activité",
+      "generateActivityHint": "Si activé, l'activité du PNJ sera affichée.",
+      "generateMotivation": "Afficher la motivation",
+      "generateMotivationHint": "Si activé, la motivation du PNJ sera affichée.",
+      "generateFaction": "Afficher la faction",
+      "generateFactionHint": "Si activé, la faction du PNJ (si applicable) sera affichée.",
+      "generateIcon": "Afficher l'Icône",
+      "generateIconHint": "Si activé, l'Icône du PNJ sera affichée.",
+      "noFactionPercentage": "Aucune faction (%)",
+      "noFactionPercentageHint": "Pourcentage des PNJs qui ne sont pas membre d'une faction.",
+      "otherFactionPercentage": "Faction mineure (%)",
+      "otherFactionPercentageHint": "Pourcentage des PNJs qui sont membres d'une faction mineure.",
+      "humanitePercentage": "Humanites (%)",
+      "humanitePercentageHint": "Pourcentage des PNJs qui sont des humanites.",
+      "semiIntelligencePercentage": "Semi-intelligences (%)",
+      "semiIntelligencePercentageHint": "Pourcentage des PNJs qui sont des semi-intelligences.",
+      "useAIPortrait": "Portaits générés par une IA",
+      "useAIPortraitHint": "Requiert le module 'Coriolis AI art pack by kbender'.",
+      "useAIPortraitRoundToken": "Jetons générés par une IA",
+      "useAIPortraitRoundTokenHint": "Si les portraits générés par une IA sont utilisés, assigner un jeton circulaire à l'acteur. Sinon, le portait sera assigné comme jeton."
     },
     "labels": {
       "name": "Nom",
+      "origin": "Origin",
       "profession": "Profession",
       "characteristic": "Caractéristique",
       "activity": "Activité",
@@ -28,9 +39,32 @@
       "icon": "Icône",
       "createNpcSheet": "Créer la fiche du PNJ"
     },
+    "semiIntelligence": {
+      "ekilibri": "Ekilibri",
+      "nekatra": "Nekatra",
+      "skavara": "Skavara",
+      "desdemodu": "Desdemodu"
+    },
+    "humanites": {
+      "tugul": "Tugul",
+      "ichtar": "Ichtar",
+      "krahin": "Krahin",
+      "tehl": "Tehl",
+      "jaron": "Jaron",
+      "mendril": "Mendril",
+      "vesti": "Vesti",
+      "kalit": "Kalit",
+      "sirb": "Sirb",
+      "xinghur": "Xinghur",
+      "nerid": "Nerid",
+      "saran": "Saran",
+      "anoa": "Anoa"
+    },
     "origins": {
       "firstcome": "Premiers",
-      "zenithian": "Zénétiens"
+      "zenithian": "Zénétiens",
+      "semiIntelligence": "Semi-Intelligence",
+      "humanite": "Humanite"
     },
     "factions": {
       "ahlamsTemple": "Temple d'Ahlam",

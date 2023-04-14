@@ -1,3 +1,6 @@
+import { isHumanite, isSemiIntelligence } from './origins.js';
+import { getRandomElement } from '../utils.js';
+
 export const FIRST_NAMES = [
   'Awadah',
   'Youssouf',
@@ -1153,3 +1156,68 @@ export const LAST_NAMES = [
   'Wasem',
   'Zogby',
 ];
+
+export const SEMI_INTELIGENCE_NAMES = [
+  'Aak',
+  'Aquir',
+  'Bijk',
+  'Boorl',
+  'Cruk',
+  'Cawa',
+  'Droth',
+  'Dzawk',
+  'Ekkk',
+  'Errr',
+  'Frawl',
+  'Fzo',
+  'Garoko',
+  'Grawwl',
+  'Hri',
+  'Haww',
+  'Ikri',
+  'Iwa',
+  'Jrow',
+  'Jjaj',
+  'Kawwr',
+  'Kbok',
+  'Larrsr',
+  "Li'shok",
+  'Mijin',
+  'Mok',
+  'Naakh',
+  'Nook',
+  'Oowkr',
+  'Orth',
+  'Praw',
+  'Pwo',
+  'Qur',
+  'Qopq',
+  'Rawk',
+  'Rkri',
+  'Swari',
+  'Sworv',
+  'Thok',
+  'Trass',
+  'Uhw',
+  'Uwk',
+  'Vrrrow',
+  'Vza',
+  'Woth',
+  'Wuru',
+  'Xak',
+  'Xurk',
+  'Yolrl',
+  'Yyyek',
+  'Zahaw',
+  'Zwakr',
+];
+
+export function getName(origin) {
+  if (isSemiIntelligence(origin)) {
+    return getRandomElement(SEMI_INTELIGENCE_NAMES);
+  }
+  if (isHumanite(origin)) {
+    return getRandomElement(FIRST_NAMES);
+  }
+  return `${getRandomElement(FIRST_NAMES)} ${getRandomElement(LAST_NAMES)}`;
+}

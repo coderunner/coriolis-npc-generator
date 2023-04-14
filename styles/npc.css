@@ -1,6 +1,9 @@
 .coriolis-npc .name {
   font-weight: bold;
 }
+.coriolis-npc .origin {
+  font-weight: bold;
+}
 .coriolis-npc .icon {
   font-weight: bold;
 }

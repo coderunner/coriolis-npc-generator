@@ -9,7 +9,12 @@ import {
   ICON_SETTING,
   NO_FACTION_PERCENTAGE,
   OTHER_FACTION_PERCENTAGE,
+  SEMI_INTELLIGENCE_PERCENTAGE,
+  HUMANITE_PERCENTAGE,
+  USE_AI_PORTRAIT,
+  USE_AI_PORTRAIT_ROUND_TOKEN,
 } from './settings.js';
+import { localizeOrigin } from './data/origins.js';
 import { MODULE_NAME } from './constants.js';
 
 Hooks.once('ready', async () => {
@@ -71,36 +76,72 @@ Hooks.once('ready', async () => {
     default: true,
     config: true,
   });
-  game.settings.register(MODULE_NAME, ICON_SETTING, {
-    name: 'coriolisNpcGenerator.settings.generateIcon',
-    hint: 'coriolisNpcGenerator.settings.generateIconHint',
+  game.settings.register(MODULE_NAME, HUMANITE_PERCENTAGE, {
+    name: 'coriolisNpcGenerator.settings.humanitePercentage',
+    hint: 'coriolisNpcGenerator.settings.humanitePercentageHint',
     scope: 'client',
-    type: Boolean,
-    default: true,
+    type: Number,
+    default: 1,
+    range: {
+      min: 0,
+      max: 20,
+      step: 1,
+    },
+    config: true,
+  });
+  game.settings.register(MODULE_NAME, SEMI_INTELLIGENCE_PERCENTAGE, {
+    name: 'coriolisNpcGenerator.settings.semiIntelligencePercentage',
+    hint: 'coriolisNpcGenerator.settings.semiIntelligencePercentageHint',
+    scope: 'client',
+    type: Number,
+    default: 1,
+    range: {
+      min: 0,
+      max: 20,
+      step: 1,
+    },
     config: true,
   });
   game.settings.register(MODULE_NAME, NO_FACTION_PERCENTAGE, {
     name: 'coriolisNpcGenerator.settings.noFactionPercentage',
+    hint: 'coriolisNpcGenerator.settings.noFactionPercentageHint',
     scope: 'client',
     type: Number,
     default: 20,
     range: {
       min: 0,
-      max: 100,
+      max: 40,
       step: 1,
     },
     config: true,
   });
   game.settings.register(MODULE_NAME, OTHER_FACTION_PERCENTAGE, {
     name: 'coriolisNpcGenerator.settings.otherFactionPercentage',
+    hint: 'coriolisNpcGenerator.settings.otherFactionPercentageHint',
     scope: 'client',
     type: Number,
     default: 2,
     range: {
       min: 0,
-      max: 100,
+      max: 20,
       step: 1,
     },
+    config: true,
+  });
+  game.settings.register(MODULE_NAME, USE_AI_PORTRAIT, {
+    name: 'coriolisNpcGenerator.settings.useAIPortrait',
+    hint: 'coriolisNpcGenerator.settings.useAIPortraitHint',
+    scope: 'client',
+    type: Boolean,
+    default: true,
+    config: true,
+  });
+  game.settings.register(MODULE_NAME, USE_AI_PORTRAIT_ROUND_TOKEN, {
+    name: 'coriolisNpcGenerator.settings.useAIPortraitRoundToken',
+    hint: 'coriolisNpcGenerator.settings.useAIPortraitRoundTokenHint',
+    scope: 'client',
+    type: Boolean,
+    default: true,
     config: true,
   });
 
@@ -115,4 +156,8 @@ Hooks.on('renderChatLog', (log, html, data) => {
 
     await game.CoriolisNpcGenerator.generateNPCSheet(message);
   });
+});
+
+Handlebars.registerHelper('localizeOrigin', function (origin) {
+  return localizeOrigin(origin);
 });
