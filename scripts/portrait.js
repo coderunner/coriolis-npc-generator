@@ -30,10 +30,6 @@ export function getPortrait(npcData, settings) {
     );
   }
 
-  console.log(npcData.origin);
-  console.log(npcData.profession);
-  console.log(aiArtPortrait);
-
   if (!aiArtPortrait) {
     return DEFAULT_PORTAIT_IMAGES;
   }
