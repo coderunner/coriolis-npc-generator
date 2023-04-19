@@ -30,7 +30,15 @@ During the game, when you quickly need an NPC, click the macro to generate an NP
 
 You can configure the amount of information you want for generated NPCs in the Module Settings.
 
-![settings](https://i.imgur.com/2xwrjp7.png)
+![settings](https://i.imgur.com/24Mb9vy.png)
+
+## Using AI art portraits and tokens
+
+This module is compatible with the Coriolis AI art pack by kbender (https://foundryvtt.com/packages/coriolis-kbender-ai-art-pack).
+
+If the module is activated, a portrait will be assigned to the NPC when the actor sheet is generated. You can disable this feature in the settings.
+
+![portrait](https://i.imgur.com/onAHrQ4.png)
 
 ## Languages
 
