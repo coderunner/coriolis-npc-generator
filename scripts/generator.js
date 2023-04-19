@@ -1,23 +1,28 @@
-import { FIRST_NAMES, LAST_NAMES } from './data/names.js';
+import { getName } from './data/names.js';
 import { PROFESSIONS } from './data/professions.js';
 import { CHARACTERISTICS } from './data/characteristics.js';
 import { ACTIVITIES } from './data/activities.js';
-import { ORIGINS } from './data/origins.js';
+import {
+  getRandomOrigin,
+  isHumanite,
+  isSemiIntelligence,
+  localizeOrigin,
+} from './data/origins.js';
 import { ICONS } from './data/icon.js';
 import { getFaction } from './data/factions.js';
 
 import { getRandomElement } from './utils.js';
 import { getSettings } from './settings.js';
 import { createChatMessage, getNpcData, updateChatMessage } from './chat.js';
+import { DEFAULT_PORTAIT_IMAGES, getPortrait } from './portrait.js';
 
 export class CoriolisNPCGenerator {
   generateNPC(settings) {
     const activity = getRandomElement(ACTIVITIES);
-    const origin = getRandomElement(ORIGINS);
+    const origin = getRandomOrigin(settings);
     const faction = getFaction(origin, settings);
     return {
-      firstName: getRandomElement(FIRST_NAMES),
-      lastName: getRandomElement(LAST_NAMES),
+      name: getName(origin),
       profession: getRandomElement(PROFESSIONS),
       characteristic: getRandomElement(CHARACTERISTICS),
       activity: activity.name,
@@ -29,20 +34,29 @@ export class CoriolisNPCGenerator {
   }
 
   async generateNPCSheet(message) {
+    const settings = getSettings();
     const npcData = getNpcData(message);
 
     const concept = this._generateConceptDescription(npcData);
     const profile = npcData.profession.profile;
+    const portraitImages =
+      getPortrait(npcData, settings) ?? DEFAULT_PORTAIT_IMAGES;
+
     const actor = await Actor.create({
-      name: `${npcData.firstName} ${npcData.lastName}`,
+      name: npcData.name,
       type: 'npc',
-      img: 'systems/yzecoriolis/css/images/unknown_player.png',
+      img:
+        portraitImages.token ??
+        portraitImages.portrait ??
+        DEFAULT_PORTAIT_IMAGES.token,
+      prototypeToken: {
+        actorLink: true,
+      },
       system: {
+        keyArt: portraitImages.portrait ?? DEFAULT_PORTAIT_IMAGES.portrait,
         bio: {
           concept: concept,
-          origin: game.i18n.localize(
-            `coriolisNpcGenerator.origins.${npcData.origin}`
-          ),
+          origin: localizeOrigin(npcData.origin),
           icon: game.i18n.localize(
             `coriolisNpcGenerator.icons.${npcData.icon}`
           ),
@@ -58,7 +72,7 @@ export class CoriolisNPCGenerator {
       },
     });
 
-    await updateChatMessage(message, npcData, getSettings(), actor._id);
+    await updateChatMessage(message, npcData, settings, actor._id);
   }
 
   async run() {
@@ -76,11 +90,20 @@ export class CoriolisNPCGenerator {
         ' - ' +
         game.i18n.localize(`coriolisNpcGenerator.factions.${npcData.faction}`);
     }
+    if (isHumanite(npcData.origin)) {
+      concept += ` - ${localizeOrigin(npcData.origin)} (${game.i18n.localize(
+        'coriolisNpcGenerator.origins.humanite'
+      )})`;
+    }
+    if (isSemiIntelligence(npcData.origin)) {
+      concept += ' - ' + localizeOrigin(npcData.origin);
+    }
     concept +=
       ' - ' +
       game.i18n.localize(
         `coriolisNpcGenerator.characteristics.${npcData.characteristic}`
       );
+
     return concept;
   }
 }

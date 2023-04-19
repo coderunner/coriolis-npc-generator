@@ -2,8 +2,12 @@
   {{#if settings.generateName}}
   <p><span>{{localize 'coriolisNpcGenerator.labels.name'}}: </span><span
       class='name'
-    >{{npc.firstName}}
-      {{npc.lastName}}</span></p>
+    >{{npc.name}}</span></p>
+  {{/if}}
+  {{#if npc.origin}}
+  <p><span>{{localize 'coriolisNpcGenerator.labels.origin'}}: </span><span
+      class='origin'
+    >{{localizeOrigin npc.origin}}</span></p>
   {{/if}}
   {{#if settings.generateIcon}}
   <p><span>{{localize 'coriolisNpcGenerator.labels.icon'}}: </span><span
@@ -53,7 +57,7 @@
   {{#if actorId}}
   <a class="content-link" draggable="true" data-uuid="Actor.{{actorId}}" data-id={{actorId}} data-type="Actor" data-tooltip="Actor">
     <i class="fas fa-user"></i>
-    {{npc.firstName}} {{npc.lastName}}
+    {{npc.name}}
   </a>
   {{else}}
   <div class="create-sheet">

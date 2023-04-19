@@ -1,21 +1,6 @@
 export const NPC_PROFILES = {
-  common: {
-    attributes: {
-      agility: { value: 3 },
-      empathy: { value: 3 },
-      strength: { value: 2 },
-      wits: { value: 2 },
-    },
-    skills: {
-      manipulation: { value: 1 },
-      observation: { value: 1 },
-      dexterity: { value: 1 },
-    },
-    reputation: {
-      value: 2,
-    },
-  },
   agent: {
+    name: 'agent',
     attributes: {
       agility: { value: 4 },
       empathy: { value: 4 },
@@ -31,7 +16,42 @@ export const NPC_PROFILES = {
       value: 4,
     },
   },
+  artist: {
+    name: 'artist',
+    attributes: {
+      agility: { value: 3 },
+      empathy: { value: 5 },
+      strength: { value: 2 },
+      wits: { value: 2 },
+    },
+    skills: {
+      manipulation: { value: 3 },
+      dexterity: { value: 2 },
+      culture: { value: 1 },
+    },
+    reputation: {
+      value: 5,
+    },
+  },
+  common: {
+    name: 'common',
+    attributes: {
+      agility: { value: 3 },
+      empathy: { value: 3 },
+      strength: { value: 2 },
+      wits: { value: 2 },
+    },
+    skills: {
+      manipulation: { value: 1 },
+      observation: { value: 1 },
+      dexterity: { value: 1 },
+    },
+    reputation: {
+      value: 2,
+    },
+  },
   dataSpider: {
+    name: 'dataSpider',
     attributes: {
       agility: { value: 3 },
       empathy: { value: 3 },
@@ -47,23 +67,8 @@ export const NPC_PROFILES = {
       value: 4,
     },
   },
-  negociator: {
-    attributes: {
-      agility: { value: 2 },
-      empathy: { value: 5 },
-      strength: { value: 2 },
-      wits: { value: 4 },
-    },
-    skills: {
-      manipulation: { value: 3 },
-      culture: { value: 2 },
-      command: { value: 1 },
-    },
-    reputation: {
-      value: 5,
-    },
-  },
   fugitive: {
+    name: 'fugitive',
     attributes: {
       agility: { value: 4 },
       empathy: { value: 4 },
@@ -79,7 +84,8 @@ export const NPC_PROFILES = {
       value: 2,
     },
   },
-  scientist: {
+  medicurg: {
+    name: 'medicurg',
     attributes: {
       agility: { value: 3 },
       empathy: { value: 3 },
@@ -87,63 +93,33 @@ export const NPC_PROFILES = {
       wits: { value: 5 },
     },
     skills: {
-      science: { value: 3 },
-      technology: { value: 2 },
+      medicurgy: { value: 3 },
+      science: { value: 2 },
       observation: { value: 1 },
     },
     reputation: {
       value: 5,
     },
   },
-  shipWorker: {
+  negociator: {
+    name: 'negociator',
     attributes: {
-      agility: { value: 3 },
-      empathy: { value: 3 },
-      strength: { value: 5 },
-      wits: { value: 3 },
-    },
-    skills: {
-      force: { value: 3 },
-      dexterity: { value: 2 },
-      meleecombat: { value: 1 },
-    },
-    reputation: {
-      value: 3,
-    },
-  },
-  artist: {
-    attributes: {
-      agility: { value: 3 },
+      agility: { value: 2 },
       empathy: { value: 5 },
       strength: { value: 2 },
-      wits: { value: 2 },
+      wits: { value: 4 },
     },
     skills: {
       manipulation: { value: 3 },
-      dexterity: { value: 2 },
-      culture: { value: 1 },
+      culture: { value: 2 },
+      command: { value: 1 },
     },
     reputation: {
       value: 5,
     },
   },
-  soldier: {
-    attributes: {
-      agility: { value: 5 },
-      empathy: { value: 2 },
-      strength: { value: 3 },
-      wits: { value: 2 },
-    },
-    skills: {
-      rangedcombat: { value: 3 },
-      meleecombat: { value: 2 },
-      command: { value: 1 },
-    },
-    reputation: {
-      value: 3,
-    },
-  },
   pilot: {
+    name: 'pilot',
     attributes: {
       agility: { value: 4 },
       empathy: { value: 2 },
@@ -160,6 +136,7 @@ export const NPC_PROFILES = {
     },
   },
   preacher: {
+    name: 'preacher',
     attributes: {
       agility: { value: 2 },
       empathy: { value: 4 },
@@ -175,7 +152,59 @@ export const NPC_PROFILES = {
       value: 5,
     },
   },
+  scientist: {
+    name: 'scientist',
+    attributes: {
+      agility: { value: 3 },
+      empathy: { value: 3 },
+      strength: { value: 2 },
+      wits: { value: 5 },
+    },
+    skills: {
+      science: { value: 3 },
+      technology: { value: 2 },
+      observation: { value: 1 },
+    },
+    reputation: {
+      value: 5,
+    },
+  },
+  shipWorker: {
+    name: 'shipWorker',
+    attributes: {
+      agility: { value: 3 },
+      empathy: { value: 3 },
+      strength: { value: 5 },
+      wits: { value: 3 },
+    },
+    skills: {
+      force: { value: 3 },
+      dexterity: { value: 2 },
+      meleecombat: { value: 1 },
+    },
+    reputation: {
+      value: 3,
+    },
+  },
+  soldier: {
+    name: 'soldier',
+    attributes: {
+      agility: { value: 5 },
+      empathy: { value: 2 },
+      strength: { value: 3 },
+      wits: { value: 2 },
+    },
+    skills: {
+      rangedcombat: { value: 3 },
+      meleecombat: { value: 2 },
+      command: { value: 1 },
+    },
+    reputation: {
+      value: 3,
+    },
+  },
   trailblazer: {
+    name: 'trailblazer',
     attributes: {
       agility: { value: 4 },
       empathy: { value: 2 },
@@ -189,22 +218,6 @@ export const NPC_PROFILES = {
     },
     reputation: {
       value: 4,
-    },
-  },
-  medicurg: {
-    attributes: {
-      agility: { value: 3 },
-      empathy: { value: 3 },
-      strength: { value: 2 },
-      wits: { value: 5 },
-    },
-    skills: {
-      medicurgy: { value: 3 },
-      science: { value: 2 },
-      observation: { value: 1 },
-    },
-    reputation: {
-      value: 5,
     },
   },
 };
