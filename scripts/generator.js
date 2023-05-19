@@ -46,14 +46,19 @@ export class CoriolisNPCGenerator {
       name: npcData.name,
       type: 'npc',
       img:
-        portraitImages.token ??
         portraitImages.portrait ??
-        DEFAULT_PORTAIT_IMAGES.token,
+        portraitImages.token ??
+        DEFAULT_PORTAIT_IMAGES.portrait,
       prototypeToken: {
         actorLink: true,
+        texture: {
+          src:
+            portraitImages.token ??
+            portraitImages.portrait ??
+            DEFAULT_PORTAIT_IMAGES.token,
+        },
       },
       system: {
-        keyArt: portraitImages.portrait ?? DEFAULT_PORTAIT_IMAGES.portrait,
         bio: {
           concept: concept,
           origin: localizeOrigin(npcData.origin),
