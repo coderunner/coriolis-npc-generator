@@ -1,9 +1,11 @@
 import { isSemiIntelligence, isHumanite } from './data/origins.js';
 
 const UNKNOWN_PLAYER = 'systems/yzecoriolis/css/images/unknown_player.png';
+const UNKNOWN_PLAYER_TOKEN =
+  'systems/yzecoriolis/css/images/unknown_player_token.png';
 export const DEFAULT_PORTAIT_IMAGES = {
   portrait: UNKNOWN_PLAYER,
-  token: UNKNOWN_PLAYER,
+  token: UNKNOWN_PLAYER_TOKEN,
 };
 
 export function getPortrait(npcData, settings) {
