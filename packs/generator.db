@@ -1,1 +1,0 @@
-{"name":"Generate NPC","type":"script","author":"97bsJYOh4FMjEg26","img":"icons/svg/cowled.svg","scope":"global","command":"game.CoriolisNpcGenerator.run()","folder":null,"sort":0,"permission":{"default":0,"97bsJYOh4FMjEg26":3},"flags":{"core":{"sourceId":"Macro.Ja2MVpn2JEcLCGq4"}},"_id":"FlTMfy4g7ltbYR6O"}
