@@ -7,10 +7,10 @@
       "name": "Félix-Étienne Trépanier"
     }
   ],
-  "version": "3.0.0",
+  "version": "4.0.0",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13"
   },
   "relationships": {
     "systems": [
@@ -19,7 +19,7 @@
         "type": "system",
         "manifest": "https://github.com/winks-vtt/yze-coriolis/releases/latest/download/system.json",
         "compatibility": {
-          "minimum": "3.9.1"
+          "minimum": "4.0.1"
         }
       }
     ]

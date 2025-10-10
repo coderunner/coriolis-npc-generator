@@ -149,11 +149,11 @@ Hooks.once('ready', async () => {
 });
 
 Hooks.on('renderChatLog', (log, html, data) => {
-  html.on('click', '.create-sheet', async (ev) => {
+  $(html).on('click', '.create-sheet', async (ev) => {
     const button = $(ev.currentTarget);
     const messageId = button.parents('.message').attr('data-message-id');
     const message = game.messages.get(messageId);
-
+    
     await game.CoriolisNpcGenerator.generateNPCSheet(message);
   });
 });
